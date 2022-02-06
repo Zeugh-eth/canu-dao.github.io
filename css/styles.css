@@ -1,0 +1,177 @@
+:root {
+  --main-red: #CA5773;
+  --main-green: #98F8A7; 
+  --main-gray: #C4C4C4;
+}
+
+.txt-green {
+  color: var(--main-green)
+}
+
+.txt-red {
+  color: var(--main-red)
+}
+
+html, body, div, footer, nav {
+  background: #2F2E41;
+  font-size: 1.2rem;
+  color: white;
+}
+
+section h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+nav { 
+  padding: 3vw;
+}
+
+section {
+  padding: 5vh
+}
+
+/* Land Text */
+#land-text-wrapper {
+  text-align: left !important;
+}
+#land-text-wrapper span {
+  color: var(--main-green)
+}
+
+#land-text-wrapper h1 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 3rem;
+}
+
+#land-text-wrapper p {
+  font-weight: bold;
+}
+
+/* Package Wrapper */
+#package-wrapper h2 {
+  font-weight: 700;
+  text-align: left;
+}
+
+#package-wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#package-wrapper .row {
+  padding-bottom: 5vh;
+}
+
+/* Join our community */
+#join-comm-wrapper {
+  background-color: var(--main-red);
+}
+
+#join-comm-wrapper * {
+  background-color: var(--main-red);
+}
+
+#join-comm-wrapper .title {
+  text-align: left !important;
+  font-weight: 700;
+}
+
+#join-comm-wrapper p {
+  font-weight: 600;
+  color: var(--main-gray);
+}
+
+#join-comm-wrapper button {
+  display: block;
+  float: right;
+  margin: 5vh 0;
+  background-color: black;
+  color: var(--main-green);
+  border-radius: 3rem;
+  padding: 10px 30px;
+  
+}
+
+/* Our bots */
+#our-bots-wrapper .container, .card-body {
+  background-color: transparent;
+}
+
+#our-bots-wrapper .bot-cards-row {
+  margin-top: 10vh;
+}
+#our-bots-wrapper .bot-img-wrapper {
+  background-color: #292929;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 5vh 5vw;
+  max-height: 50vh;
+}
+
+#our-bots-wrapper .card-img-top {
+  max-width: 100%;
+}
+
+#our-bots-wrapper .card {
+  background-color: #2C2C2C;
+  height: 70vh;
+  border-radius: 2rem;
+  max-height: 45vh;
+}
+
+#our-bots-wrapper .card-title  {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+#our-bots-wrapper .card-footer a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* DAO */
+#DAO-wrapper {
+  background-image: url("/img/background-glasses.svg"); 
+  
+}
+section #DAO-wrapper {
+  max-width: 50%;
+}
+
+#DAO-wrapper *{
+  background-image: url("/img/background-glasses.svg");
+}
+
+#DAO-wrapper.container{
+  background-image: url("/img/background-glasses.svg");
+}
+
+#DAO-wrapper img{
+  padding: 25%;
+}
+
+#DAO-wrapper h1 {
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+#DAO-wrapper h5 {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+#DAO-wrapper span {
+  color: var(--main-green);
+}
+
+#DAO-wrapper .container p {
+  font-weight: 400;
+}
+
+footer  {
+  padding-top: 30vh;
+}
