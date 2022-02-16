@@ -32,59 +32,59 @@ section {
 }
 
 /* Land Text */
-#land-text-wrapper {
+#home {
   text-align: left !important;
 }
-#land-text-wrapper span {
+#home span {
   color: var(--main-green)
 }
 
-#land-text-wrapper h1 {
+#home h1 {
   font-weight: bold;
   text-align: left;
   font-size: 3rem;
 }
 
-#land-text-wrapper p {
+#home p {
   font-weight: bold;
 }
 
 /* Package Wrapper */
-#package-wrapper h2 {
+#packages h2 {
   font-weight: 700;
   text-align: left;
 }
 
-#package-wrapper img {
+#packages img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#package-wrapper .row {
+#packages .row {
   padding-bottom: 5vh;
 }
 
 /* Join our community */
-#join-comm-wrapper {
+#join-comm {
   background-color: var(--main-red);
 }
 
-#join-comm-wrapper * {
-  background-color: var(--main-red);
+#join-comm * {
+  background-color: transparent;
 }
 
-#join-comm-wrapper .title {
+#join-comm .title {
   text-align: left !important;
   font-weight: 700;
 }
 
-#join-comm-wrapper p {
+#join-comm p {
   font-weight: 600;
   color: var(--main-gray);
 }
 
-#join-comm-wrapper button {
+#join-comm button {
   display: block;
   float: right;
   margin: 5vh 0;
@@ -96,14 +96,14 @@ section {
 }
 
 /* Our bots */
-#our-bots-wrapper .container, .card-body {
+#our-bots .container, .card-body {
   background-color: transparent;
 }
 
-#our-bots-wrapper .bot-cards-row {
+#our-bots .bot-cards-row {
   margin-top: 10vh;
 }
-#our-bots-wrapper .bot-img-wrapper {
+#our-bots .bot-img-wrapper {
   background-color: #292929;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -111,67 +111,80 @@ section {
   max-height: 50vh;
 }
 
-#our-bots-wrapper .card-img-top {
+#our-bots img {
+  width: auto;
+  height: 15vh;
+  margin: 25%;
+}
+
+#our-bots .card-img-top {
   max-width: 100%;
 }
 
-#our-bots-wrapper .card {
+#our-bots .card {
   background-color: #2C2C2C;
   height: 70vh;
   border-radius: 2rem;
   max-height: 45vh;
 }
 
-#our-bots-wrapper .card-title  {
+#our-bots .card-title  {
   font-weight: 700;
   font-size: 1.8rem;
 }
 
-#our-bots-wrapper .card-footer a {
+#our-bots .card-footer a {
   font-weight: 700;
   color: white;
   text-decoration: none;
 }
 
 /* DAO */
-#DAO-wrapper {
+#DAO {
   background-image: url("/img/background-glasses.svg"); 
   
 }
-section #DAO-wrapper {
+section #DAO {
   max-width: 50%;
 }
 
-#DAO-wrapper *{
-  background-image: url("/img/background-glasses.svg");
+#DAO *{
+  background-color: transparent;
 }
 
-#DAO-wrapper.container{
-  background-image: url("/img/background-glasses.svg");
+#DAO .container{
+  background-color: transparent;
 }
 
-#DAO-wrapper img{
+#DAO img{
   padding: 25%;
 }
 
-#DAO-wrapper h1 {
+#DAO h1 {
   font-weight: bold;
   padding-bottom: 3rem;
 }
 
-#DAO-wrapper h5 {
+#DAO h5 {
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
 
-#DAO-wrapper span {
+#DAO span {
   color: var(--main-green);
 }
 
-#DAO-wrapper .container p {
+#DAO .container p {
   font-weight: 400;
 }
 
-footer  {
-  padding-top: 30vh;
+
+footer li {
+  list-style-type: none;
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
