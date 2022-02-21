@@ -2,6 +2,8 @@
   --main-red: #CA5773;
   --main-green: #98F8A7; 
   --main-gray: #C4C4C4;
+  --main-black: #2C2C2C;
+  --bot-img-bg: #292929;
 }
 
 .txt-green {
@@ -12,10 +14,14 @@
   color: var(--main-red)
 }
 
-html, body, div, footer, nav {
+html, body, div, .footer, nav {
   background: #2F2E41;
   font-size: 1.2rem;
   color: white;
+}
+
+body a, a:hover, a:after {
+  text-decoration: none !important;
 }
 
 section h1 {
@@ -23,8 +29,15 @@ section h1 {
   font-size: 2rem;
   text-align: center;
 }
+
 nav { 
   padding: 3vw;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    margin-top: 10%;
+  }
 }
 
 section {
@@ -49,6 +62,17 @@ section {
   font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+    font-weight: 400 !important;
+  }
+}
+
 /* Package Wrapper */
 #packages h2 {
   font-weight: 700;
@@ -59,6 +83,12 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #packages img {
+   width: 50vw;
+  }
 }
 
 #packages .row {
@@ -88,11 +118,14 @@ section {
   display: block;
   float: right;
   margin: 5vh 0;
-  background-color: black;
+  background-color: var(--main-black);
   color: var(--main-green);
   border-radius: 3rem;
   padding: 10px 30px;
-  
+}
+
+#join-comm button:hover {
+  background-color: black;
 }
 
 /* Our bots */
@@ -117,12 +150,18 @@ section {
   margin: 25%;
 }
 
+@media screen and (max-width: 600px) {
+  #our-bots img {
+    margin: 25% 0
+  }
+}
+
 #our-bots .card-img-top {
   max-width: 100%;
 }
 
 #our-bots .card {
-  background-color: #2C2C2C;
+  background-color: var(--main-black);
   height: 70vh;
   border-radius: 2rem;
   max-height: 45vh;
@@ -133,11 +172,67 @@ section {
   font-size: 1.8rem;
 }
 
-#our-bots .card-footer a {
+#our-bots .card-.footer a {
   font-weight: 700;
   color: white;
   text-decoration: none;
 }
+
+.card-column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+.cards-row {
+  margin: 0 -5px;
+}
+
+.cards-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-wrapper {
+  padding: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card-body-wrapper {
+  background-color: var(--main-black);
+  padding-bottom: 100px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.card-body-wrapper p {
+  margin: 0 5%;
+}
+
+.card-body-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-body-wrapper a:hover {
+  color: var(--main-green)
+}
+
+.img-wrapper {
+  background-color: var(--bot-img-bg);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
 
 /* DAO */
 #DAO {
@@ -156,8 +251,15 @@ section #DAO {
   background-color: transparent;
 }
 
-#DAO img{
+#DAO img {
   padding: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  #DAO img {
+    padding: 0 0 20px 0;
+    width: 70vw;
+  }
 }
 
 #DAO h1 {
@@ -179,12 +281,82 @@ section #DAO {
 }
 
 
-footer li {
+.footer li {
   list-style-type: none;
   font-weight: 600;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
   color: white;
+}
+
+.footer a:hover {
+  color: var(--main-green)
+}
+
+.footer-logo {
+  margin: 5vh 0;
+}
+
+.footer {
+  border-top: 4px solid var(--main-gray);
+  padding: 1% 0;
+}
+
+/* Bot page wrapper */
+/* Package Wrapper */
+
+#bot-page {
+  background-image: url("/img/background-glasses.svg"); 
+}
+
+#bot-page * {
+  background-color: transparent;
+}
+
+#bot-page h2 {
+  font-weight: 700;
+  text-align: left;
+}
+
+#bot-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #bot-page img {
+   width: 50vw;
+  }
+}
+
+#bot-page .row {
+  padding-bottom: 5vh;
+}
+
+#bot-page button {
+  display: block;
+  margin: 2vh 33%;
+  background-color: var(--main-black);
+  color: var(--main-green);
+  border-radius: 3rem;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+}
+
+#bot-page button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  #bot-page button {
+    margin: 2vh 0;
+  }
+
+  .bot-img-btn {
+    margin: 5vh 0;
+  }
+  
 }
