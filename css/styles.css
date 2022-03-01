@@ -1,9 +1,12 @@
 :root {
   --main-red: #CA5773;
   --main-green: #98F8A7; 
+  --hover-green: #6cac76; 
   --main-gray: #C4C4C4;
   --main-black: #2C2C2C;
   --bot-img-bg: #292929;
+  --bot-wrapper: #271E31;
+  --bots-section-bg: #13111A;
 }
 
 .txt-green {
@@ -18,6 +21,7 @@ html, body, div, .footer, nav {
   background: #2F2E41;
   font-size: 1.2rem;
   color: white;
+  font-family: IBM Plex Mono;
 }
 
 body a, a:hover, a:after {
@@ -110,26 +114,32 @@ section {
 }
 
 #join-comm p {
-  font-weight: 600;
-  color: var(--main-gray);
+  font-weight: 500;
 }
 
 #join-comm button {
   display: block;
   float: right;
   margin: 5vh 0;
-  background-color: var(--main-black);
-  color: var(--main-green);
+  background-color: transparent;
+  color: white;
   border-radius: 3rem;
+  border-width: 5px;
+  border-color: var(--main-green);
   padding: 10px 30px;
+  font-weight: 600;
 }
 
 #join-comm button:hover {
-  background-color: black;
+  color: var(--main-green);
+  border-color: var(--hover-green);
 }
 
 /* Our bots */
-#our-bots .container, .card-body {
+#our-bots, #our-bots .container, #our-bots .cards-row, #our-bots .card-column, #our-bots .card-wrapper{
+  background-color: var(--bots-section-bg);
+}
+#our-bots .container, .card-body, * {
   background-color: transparent;
 }
 
@@ -208,7 +218,7 @@ section {
 }
 
 .card-body-wrapper {
-  background-color: var(--main-black);
+  background-color: var(--bot-wrapper);
   padding-bottom: 100px;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
@@ -235,10 +245,6 @@ section {
 
 
 /* DAO */
-#DAO {
-  background-image: url("/img/background-glasses.svg"); 
-  
-}
 section #DAO {
   max-width: 50%;
 }
@@ -252,13 +258,15 @@ section #DAO {
 }
 
 #DAO img {
-  padding: 25%;
+  z-index: 0;
+  transform: rotate(-10deg);
 }
 
 @media screen and (max-width: 600px) {
   #DAO img {
     padding: 0 0 20px 0;
     width: 70vw;
+    position: absolute;
   }
 }
 
@@ -278,6 +286,11 @@ section #DAO {
 
 #DAO .container p {
   font-weight: 400;
+}
+
+#DAO .dao-container {
+  margin: 0 50vh;
+  text-align: center;
 }
 
 
@@ -303,7 +316,9 @@ section #DAO {
   border-top: 4px solid var(--main-gray);
   padding: 1% 0;
 }
-
+.footer .container {
+  margin-top: 10vh;
+}
 /* Bot page wrapper */
 /* Package Wrapper */
 
