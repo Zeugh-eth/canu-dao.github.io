@@ -270,6 +270,18 @@ section #DAO {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #DAO img {
+    margin: 40vh 0 0 5vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #DAO img {
+    margin: 40vh 0 0 12vw;
+  }
+}
+
 #DAO h1 {
   font-weight: bold;
   padding-bottom: 3rem;
@@ -293,6 +305,13 @@ section #DAO {
   text-align: center;
 }
 
+
+@media screen and (max-width: 600px) {
+  #DAO .dao-container {
+    margin: 20vh 0 0 0;
+    
+  }  
+}
 
 .footer li {
   list-style-type: none;
