@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <script></script>
   <title>CanuDAO</title>
 </head>
@@ -32,11 +33,12 @@
 
     <section id="packages">
       <div class="container">
-        <div class="row flex-column-reverse flex-lg-row">
+        <div class="row flex-column-reverse flex-lg-row starter-pkg-row">
           <div class="col">
-            <h2><span class="txt-green">Starter</span> <br> Package</h2>
-            <p>
-              Quick setup that provides the latest web3 automation stack for running your community operations via Discord and Notion. <br>
+            <h2><span class="txt-green">Starter</span> Package</h2>
+            <p class="pkg-text">
+              Quick setup that provides the latest web3 automation stack for running your community operations via
+              Discord and Notion. <br>
               <br>
               All the necessary tools for your moderation, governance, engagement and information arquitecture. <br>
               <br>
@@ -44,20 +46,21 @@
             </p>
           </div>
           <div class="col">
-            <img src="/img/starter-pkg.png" alt="">
+            <img class="starter-pkg-img pkg-img" src="/img/starter-pkg.png" alt="">
           </div>
         </div>
         <br>
-        <div class="row">
+        <div class="row emergency-pkg-row">
           <div class="col">
-            <img src="/img/emergency-pkg.png" alt="">
+            <img class="emergency-pkg-img pkg-img" src="/img/emergency-pkg.png" alt="">
           </div>
           <div class="col">
-            <h2><span class="txt-red">Emergency</span> <br> Package</h2>
-            <p>
-              Tailored web3 stack designed for community operations in DAOs undergoing unforeseen exponential growth. Easily coordinate without getting lost in the crowd. <br>
+            <h2><span class="txt-red">Emergency</span> Package</h2>
+            <p class="pkg-text">
+              Tailored web3 stack designed for community operations in DAOs undergoing unforeseen exponential growth.
+              Easily coordinate without getting lost in the crowd. <br>
               <br>
-              Learn more
+              <!-- Learn more -->
             </p>
           </div>
         </div>
@@ -72,7 +75,7 @@
             <p>Want to know what we’re working on? Drop by our by our bi-weekly town halls and get an up close look.</p>
           </div>
           <div class="col">
-            <button>Join our Discord</button>
+            <button class="btn shadow-none">Join our Discord</button>
           </div>
         </div>
       </div>
@@ -82,57 +85,74 @@
       <h1>Check out our Discord bots</h1>
       <div class="container">
         <div class="cards-row">
-            <div class="card-column">
+          <div class="card-column">
+            <a href="bots/gm-bot.html">
               <div class="card-wrapper">
-                <div class="img-wrapper">
+                <div class="img-wrapper bg-orange">
                   <img src="img/gm-bot.png" alt="">
                 </div>
                 <div class="card-body-wrapper">
-                  <h5 class="card-title">gm-bot</h5>
-                  <p class="card-text">Keep a tally of your server’s gm, as well as a top 5 rank of your most active community gm’ers.</p>
-                  <br>
-                  <a href="/bots/gm-bot.html">More details -></a>
+                  <div class="card-body-content">
+                    <h5 class="card-title">gm-bot</h5>
+                    <p class="card-text">Keep a tally of your server’s gm, as well as a top 5 rank of your most active
+                      community gm’ers.</p>
+                    <br>
+                    <!-- <a href="/bots/gm-bot.html">More details -></a> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-column">
+            </a>
+          </div>
+          <div class="card-column">
+            <a href="bots/canu-helper.html">
               <div class="card-wrapper">
-                <div class="img-wrapper">
+                <div class="img-wrapper bg-red">
                   <img src="img/canu-helper.png" alt="">
                 </div>
                 <div class="card-body-wrapper">
-                  <h5 class="card-title">canu-helper</h5>
-                  <p class="card-text">Keep a heartbeat on your community. Monitor and broadcast your DAO funding cycle and treasury movements.</p>
-                  <br>
-                  <a href="/bots/canu-helper.html">More details -></a>
+                  <div class="card-body-content">
+                    <h5 class="card-title">canu-helper</h5>
+                    <p class="card-text">Keep a heartbeat on your community. Monitor and broadcast your DAO funding
+                      cycle
+                      and treasury movements.</p>
+                    <br>
+                    <!-- <a href="/bots/canu-helper.html">More details -></a> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-column">
+            </a>
+          </div>
+          <div class="card-column">
+            <a href="bots/intro-bot.html">
               <div class="card-wrapper">
-                <div class="img-wrapper">
+                <div class="img-wrapper bg-green">
                   <img src="img/intro-bot.png" alt="">
                 </div>
                 <div class="card-body-wrapper">
-                  <h5 class="card-title">intro-bot</h5>
-                  <p class="card-text">Whether your server’s access is gated or not, intro-bot allows you to create easy onboarding forms.</p>
-                  <br>
-                  <a href="/bots/intro-bot.html">More details -></a>
+                  <div class="card-body-content">
+                    <h5 class="card-title">intro-bot</h5>
+                    <p class="card-text">Whether your server’s access is gated or not, intro-bot allows you to create easy
+                      onboarding forms.</p>
+                      <br>
+                      <!-- <a href="/bots/intro-bot.html">More details -></a> -->
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="DAO">
+      <div class="container">
         <h1 class="title">What else do we do?</h1>
         <div class="row">
-          
-          <div class="col-1">
-            <img src="/img/canu-glasses.png" alt="">
+
+          <div class="col-lg-2 dao-img-wrapper">
+            <img class="dao-img-top" src="img/canudo-full.png" alt="">
           </div>
-          <div class="col-10">
+          <div class="col-lg-8">
             <div class="dao-container">
               <div>
                 <h5>Community <span>research</span></h5>
@@ -142,8 +162,8 @@
               <div>
                 <h5>Community <span>publishing</span></h5>
                 <p>Canu Learns is a podcast for web3 community managers, by web3 community managers.</p>
-                <a href="#">Listen on Spotify</a><br>
-                <a href="#">Listen on Apple Music</a>
+                <a href="https://open.spotify.com/show/06ptZPXP19FOnqrAp2R9OM" target="_blank">Listen on Spotify</a><br>
+                <!-- <a href="#">Listen on Apple Music</a> -->
               </div>
               <br>
               <div>
@@ -152,13 +172,15 @@
               </div>
             </div>
           </div>
-          <div class="col-1">
-            &nbsp;
+          <div class="col-lg-2 dao-img-wrapper">
+            <img class="dao-img-bottom" src="img/gm-bot.png" alt="">
           </div>
           <!-- </div>
         </div> -->
 
+        </div>
       </div>
+
     </section>
 
   </div>

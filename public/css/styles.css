@@ -7,6 +7,17 @@
   --bot-img-bg: #292929;
   --bot-wrapper: #271E31;
   --bots-section-bg: #13111A;
+  /* New colors */
+  --img-bg-yellow: #fdc93f;
+  --img-bg-red: #f63c49;
+  --img-bg-green: #50f6a2;
+  --img-bg-orange: #fda134;
+  --join-comm-bg-purple: #9263d7;
+  --pkg-bg-dark-purple: #392f4a;
+  --bots-bg-dark: #13121a;
+  --dao-bg-grey: #302f41;
+  --join-comm-btn: #ddc9fe;
+  --join-comm-btn-hover: #716585;
 }
 
 .txt-green {
@@ -91,7 +102,9 @@ section {
 
 @media screen and (max-width: 600px) {
   #packages img {
-   width: 50vw;
+   width: 75vw;
+   height: auto;
+   margin-bottom: 5vh;
   }
 }
 
@@ -101,7 +114,7 @@ section {
 
 /* Join our community */
 #join-comm {
-  background-color: var(--main-red);
+  background-color: var(--join-comm-bg-purple);
 }
 
 #join-comm * {
@@ -125,19 +138,19 @@ section {
   color: white;
   border-radius: 3rem;
   border-width: 5px;
-  border-color: var(--main-green);
+  border-color: var(--join-comm-btn);
   padding: 10px 30px;
   font-weight: 600;
 }
 
 #join-comm button:hover {
-  color: var(--main-green);
-  border-color: var(--hover-green);
+  color: white;
+  border-color: white;
 }
 
 /* Our bots */
 #our-bots, #our-bots .container, #our-bots .cards-row, #our-bots .card-column, #our-bots .card-wrapper{
-  background-color: var(--bots-section-bg);
+  background-color: var(--bots-bg-dark);
 }
 #our-bots .container, .card-body, * {
   background-color: transparent;
@@ -147,7 +160,6 @@ section {
   margin-top: 10vh;
 }
 #our-bots .bot-img-wrapper {
-  background-color: #292929;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   padding: 5vh 5vw;
@@ -156,8 +168,8 @@ section {
 
 #our-bots img {
   width: auto;
-  height: 15vh;
-  margin: 25%;
+  height: 35vh;
+  margin: 3vh 1vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -179,30 +191,36 @@ section {
 
 #our-bots .card-title  {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
-#our-bots .card-.footer a {
+#our-bots .card-text {
+  font-size: 0.8rem;
+  text-align: left;
+
+}
+
+#our-bots .card .footer a {
   font-weight: 700;
   color: white;
   text-decoration: none;
 }
 
-.card-column {
+/* .card-column {
   float: left;
   width: 33%;
   padding: 0 10px;
-}
+} */
 
-.cards-row {
-  margin: 0 -5px;
-}
 
-.cards-row:after {
+/* .cards-row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .card-wrapper {
   padding: 16px;
@@ -210,23 +228,23 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-  .card-column {
+  /* .card-column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-  }
+  } */
 }
 
 .card-body-wrapper {
   background-color: var(--bot-wrapper);
-  padding-bottom: 100px;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 170px;
 }
 
-.card-body-wrapper p {
+/* .card-body-wrapper p {
   margin: 0 5%;
-}
+} */
 
 .card-body-wrapper a {
   color: white;
@@ -236,13 +254,30 @@ section {
 .card-body-wrapper a:hover {
   color: var(--main-green)
 }
+.card-body-content {
+  background-color: transparent;
+}
+
+.card-body-content p {
+  padding: 15px
+}
 
 .img-wrapper {
-  background-color: var(--bot-img-bg);
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
 }
 
+.bg-red {
+  background-color: var(--img-bg-red);
+}
+
+.bg-orange {
+  background-color: var(--img-bg-orange);
+}
+
+.bg-green {
+  background-color: var(--img-bg-green);
+}
 
 /* DAO */
 section #DAO {
@@ -257,28 +292,43 @@ section #DAO {
   background-color: transparent;
 }
 
-#DAO img {
-  z-index: 0;
-  transform: rotate(-10deg);
+#DAO .dao-img-wrapper {
+  position: relative;
+}
+#DAO .dao-img-top {
+  width: 15vw;
+  position: absolute;
+  top: 0;
+}
+
+#DAO .dao-img-bottom {
+  width: 15vw;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
   #DAO img {
-    padding: 0 0 20px 0;
-    width: 70vw;
-    position: absolute;
+    position: unset !important;
+    width: 50% !important;
+  }
+
+  #DAO .dao-container {
+    margin: 1vh 0 !important;
+  }
+
+  #DAO .dao-img-top, .dao-img-top {
+    margin: 0 25%;
   }
 }
 
 @media screen and (min-width: 600px) {
   #DAO img {
-    margin: 40vh 0 0 5vw;
   }
 }
 
 @media screen and (min-width: 1280px) {
   #DAO img {
-    margin: 40vh 0 0 12vw;
   }
 }
 
@@ -301,7 +351,6 @@ section #DAO {
 }
 
 #DAO .dao-container {
-  margin: 0 50vh;
   text-align: center;
 }
 
@@ -392,5 +441,41 @@ section #DAO {
   .bot-img-btn {
     margin: 5vh 0;
   }
+
+  #join-comm button {
+    margin: 0 4vw;
+  }
   
+}
+
+.pkg-img {
+  border-radius: 25px;
+  height: 400px;
+  width: auto;
+}
+
+.emergency-pkg-row .emergency-pkg-img {
+  background-color: var(--img-bg-red);
+  padding: 5%;
+}
+
+.starter-pkg-row .starter-pkg-img {
+  background-color: var(--img-bg-yellow);
+  padding: 5%;
+}
+
+.pkg-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-column {
+  flex: 0 0 15vw;
 }
