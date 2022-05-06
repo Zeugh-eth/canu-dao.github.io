@@ -433,6 +433,11 @@ section #DAO {
   background-color: black;
 }
 
+#bot-page .disabled {
+  cursor: not-allowed;
+  color: gray;
+} 
+
 @media screen and (max-width: 600px) {
   #bot-page button {
     margin: 2vh 0;
