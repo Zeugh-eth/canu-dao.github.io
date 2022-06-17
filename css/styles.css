@@ -415,6 +415,10 @@ section #DAO {
   #bot-page img {
    width: 50vw;
   }
+
+  #our-bots {
+    padding-bottom: 10vh !important;
+  }
 }
 
 #bot-page .row {
